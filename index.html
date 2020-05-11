@@ -15,7 +15,7 @@
     font-family: 'Source Sans Pro', sans-serif;
   }
 </style>
-<title>CS 184 Rasterizer</title>
+<title>CS 184 Final Projectr</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
 </head>
@@ -23,36 +23,30 @@
 
 <body>
 
-<h1 align="middle">CS 184 Final: Milestone</h1>
+<h1 align="middle">CS 184 Final Project</h1>
 <h2 align="middle">Team 52: James Fang, Lea Nakatsukasa, Nicholas Pels</h2>
 
 <br><br>
   
-    <p>Presentation slides: https://docs.google.com/presentation/d/1EzwVk-F6Q2MonMJlgh6b0cBBtxqV-voipBUsGlUhCZY/edit?usp=sharing</p>
-    <p>Milestone Video: https://youtu.be/-wiNg9rzfxc</p>
+    <p>Final Video:</p>
+  
+  <p>Abstract: </p>
+    <p>Our project was to build a procedurally generated solar system to explore other computer graphic techniques that were not discussed in class. We got our idea from a series of YouTube videos made by Sebastian Lague, where he goes through step-by-step how to create a rocky planet in Unity3D with continents, biomes, and oceans. We wanted to take this a step further by creating an entire solar system with rocky planets and gaseous planets orbiting around a star. The planet’s would be randomly generated and could later be edited by the user. When our demonstration is run, the user can see the orbits of the planets around the star and can zoom in on a specific planet to view and edit it.  </p>
 
-    <p>Our project is to generate an interactive solar system with unique planets. Like a real solar system, our simulation will include a star, rocky planets, and gaseous planets, with the planets orbiting around the star. The user can interact with specific planets to customize and explore the solar system. </p>
-
-    <p>So far, our group has an editable model of a rocky planet. The planet’s colors, size, and terrain can be edited manually. There are certain preset types of settings the user can apply to planets like the type of continents or land masses they want, or the color of the planet. Otherwise, the user can customize the planet to their liking by adjusting its size, land shape, and roughness to name a few parameters. If the user does not want to customize the planet, they can choose for our program to randomize the planet. </p>
-
-    <div align="center">
-        <table style="width=100%">
-            <tr>
-                <td align="middle">
-                    <img src="images/planetCustomization.png" width="480px" />
-                    <figcaption align="middle">Planet customization menu</figcaption>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <p>We also have a working orbit for the planets in the solar system. An assortment of rocky planets orbit around a star. The camera starts with a view of the entire solar system, which can zoom in and zoom out. In the planets’ orbit, the user can zoom in on a specific planet by selecting it from a dropdown menu. When zoomed in, the user can see what the planet looks like up close and possibly customize the planet as specified above. However, customization has not been added to the planets in orbit yet. </p>
-
-    <p>Gaseous planets are currently in progress, which when added, should be customizable similarly to the rocky planets. There is an option to add rings to gaseous planets, but we are still in the process of debugging the rings’ appearance. We will also give the gaseous planets a texture to simulate gas movement that we can see from pictures of real gaseous planets to make the planets less flat. Once gaseous planets are debugged, they will be added to the orbit and can be customized by the user. </p>
-
-    <p>In terms of our final product, planet customization and viewing planets in orbit have not been combined yet. For now, when viewing the orbit, the user can view each planet individually but cannot customize it yet. In a separate scene, the user can customize the planet but cannot see it in orbit at the same time. We will either have the user customize their planets before seeing them in orbit or add the option to customize their planet while they zoom in to a specific planet in orbit. </p>
-
-    <p>As of now, we still need to make sure all our components work together seamlessly. We only recently started incorporating the rocky planets into the orbit demo and created a working camera to easily view the solar system and specific planets. For gaseous planets, we need to debug the implementation of rings and apply a striped, gaseous texture to the planet itself so it is not a flat sphere. Once these components are completed and put together, we need to debug our code. At this point, the majority of our demo should be finished. With what we have completed now, we should be on schedule and can have a working solar system by the presentation deadline. </p>
-
+  <p>Technical Approach: </p>
+    <p>The main process for creating rocky planets was outlined in Lague’s planet generation series. First, we needed a spherical mesh to represent the base of the planet. We started by taking a cubical mesh and making all the vertices equidistant from the center to get the sphere. The radius and base color of the planet were made to be edited so that the planet could be set up to have a random radius and color assigned to it. </p>
+  
+  <p>Results: </p>
+  
+  <p>References: </p>
+    <p>Board to Bits Games. Making a Custom Planet Ring in Unity. https://www.youtube.com/watch?v=Rze4GEFrYYs </p>
+    <p>Lague, Sebastian. Unity Procedural Planet Generation. https://www.youtube.com/watch?v=QN39W020LqU&list=PLFt_AvWsXl0cONs3T0By4puYy6GM22ko8 </p>
+    
+  <p>Contributions from each team member: </p>
+    <p>James Fang: </p>
+    <p>Lea Nakatsukasa: </p>
+    <p>Nicholas Pels: </p>
+  
+  
 </body>
 </html>
