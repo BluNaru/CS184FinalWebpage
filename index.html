@@ -36,7 +36,23 @@
   <p> <strong>Technical Approach:</strong> </p>
     <p>The main process for creating rocky planets was outlined in Lague’s planet generation series. First, we needed a spherical mesh to represent the base of the planet. We started by taking a cubical mesh and making all the vertices equidistant from the center to get the sphere. The radius and base color of the planet were made to be edited so that the planet could be set up to have a random radius and color assigned to it. </p>
   
-    <p>For the physical simulation of the solar system, we used Newton’s equation for gravity: F=<box>GM<sub>1</sub>M<sub>2</sub><over>r<sup>2</sup></box>. Each frame, we use this equation to calculate the acceleration each planet experiences from the star in the middle. We then use Huen’s method to integrate the velocity and position. The updates are as follows: </p>
+    <p>For the physical simulation of the solar system, we used Newton’s equation for gravity: F=<box>GM<sub>1</sub>M<sub>2</sub>/r<sup>2</sup></box>. Each frame, we use this equation to calculate the acceleration each planet experiences from the star in the middle. We then use Huen’s method to integrate the velocity and position. The updates are as follows: </p>
+        <div align="center">
+        <table style="width=100%">
+            <tr>
+                <td align="middle">
+                    <img src="images/equation1.png" width="480px" />
+                </td>
+            </tr>
+          <tr>
+                <td align="middle">
+                    <img src="images/equation2.png" width="480px" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p>where p and v are position and velocity respectively. This is a simplified version of the famous Runge-Kutta method for integration. We found that this was slightly more accurate than Verlet integration, which we learned in class. </p>
+    <p>It is also important that the planets have an initial velocity that is tangential to the gravity vector. This allows the orbiting behavior. Otherwise, the planets would simply crash into the burning star, and we would be terrible gods. The higher this initial velocity is, the more elliptical the orbits become. </p>
   <p> <strong>Results:</strong> </p>
   
   <p> <strong>References:</strong> </p>
